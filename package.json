@@ -1,0 +1,27 @@
+{
+    "name": "messages-widget",
+    "version": "1.0.0",
+    "description": "A simple widget to display unread messages with RxJS and Faker",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "webpack-dev-server",
+        "build": "webpack --mode production"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.2",
+        "faker": "^5.5.3",
+        "rxjs": "^7.8.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.26.7",
+        "@babel/preset-env": "^7.26.7",
+        "babel-loader": "^8.4.1",
+        "css-loader": "^6.11.0",
+        "html-webpack-plugin": "^5.6.3",
+        "style-loader": "^3.3.4",
+        "webpack": "^5.97.1",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.15.2"
+    }
+}
