@@ -1,0 +1,13 @@
+version: 1.0.{build}
+image: Ubuntu
+build_script:
+  - npm install
+  - npm run build
+artifacts:
+  - path: dist
+deploy:
+  provider: GitHubPages
+  auth_token: $(GITHUB_TOKEN)
+  repo: yourusername/loading-ui
+  branch: gh-pages
+  folder: dist
